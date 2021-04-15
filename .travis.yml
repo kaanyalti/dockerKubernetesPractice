@@ -17,6 +17,6 @@ deploy:
   bucket_name: "elasticbeanstalk-us-east-2-403319984418"
   bucket_path: "dockerKubernetesPractice"
   on:
-    branch: master
+    branch: main
   acces_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
