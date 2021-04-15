@@ -12,10 +12,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
-  app: "dockerKubernetesPractice"
-  env: "Dockerkubernetespractice-env"
+  app: "docker-practice"
+  env: "Dockerpractice-env"
   bucket_name: "elasticbeanstalk-us-east-2-403319984418"
-  bucket_path: "dockerKubernetesPractice"
+  bucket_path: "docker-practice"
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
