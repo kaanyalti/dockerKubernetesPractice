@@ -8,3 +8,15 @@ before_install:
 
 script:
   - docker run -e CI=true kaanyalti/docker-react npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "dockerKubernetesPractice"
+  env: "Dockerkubernetespractice-env"
+  bucket_name: "elasticbeanstalk-us-east-2-403319984418"
+  bucket_path: "dockerKubernetesPractice"
+  on:
+    branch: master
+  acces_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
